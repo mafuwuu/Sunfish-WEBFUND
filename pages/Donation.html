@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name = "viewport" content = "with = device-width, initial-scale = 1.0">
+        <title>Ocean Sunfish Information Blog</title>
+        <link rel="icon" href="../images/logo_new.svg" type="image/icon type">
+        <link rel = "stylesheet" href = "../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/30c0a545fe.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href = "../Home Page.html"><img src = "../images/logo_new.svg"></a>
+                <div class = "navi">
+                    <i class="fa fa-times" onclick = "hidemenu()"></i>
+                    <ul>
+                        <li><a href = "../Home Page.html">BACK TO HOME</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick = "showmenu()"></i>
+            </nav>
+
+        <div class="donation-container">      
+            <div class="donation-box">
+	            <div class="title">Donation Here !</div>          
+	            <div class="fields">
+		            <input type="text" id="firstName" placeholder="First Name"> </input>
+		            <input type="text" id="lastName" placeholder="Last Name"> </input>
+		            <input type="text" id="email" placeholder="Email"> </input>
+	            </div>         
+	            <div class="amount">
+		            <div class="button">RM5</div>
+		            <div class="button">RM10</div>
+		            <div class="button">RM20</div>
+		            <div class="button">RM<input type="text" class="set-amount" placeholder=""> </input></div>
+	            </div>     
+	            <div class="switch">
+					<input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+					<label for="one-time" class="switch-label switch-label-off">One-Time</label>
+					<input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+					<label for="monthly" class="switch-label switch-label-on">Monthly</label>
+					<span class="switch-selection"></span>
+			    </div>		    
+	            <div class="donate-button">Submit Donation</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-----js----->
+    <script>
+    var navLinks = document.getElementById("navi");
+    function showmenu(){
+        navi.style.right = "0";
+    }
+    function hidemenu(){
+        navi.style.right = "-100%";
+    }
+    </script>
+    </body>
+</html>
+        

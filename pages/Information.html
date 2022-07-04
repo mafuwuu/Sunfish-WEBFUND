@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name = "viewport" content = "with = device-width, initial-scale = 1.0">
+        <title>Ocean Sunfish Information Blog</title>
+        <link rel="icon" href="../images/logo_new.svg" type="image/icon type">
+        <link rel = "stylesheet" href = "../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/30c0a545fe.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href = "../Home Page.html"><img src = "../images/logo_new.svg"></a>
+                <div class = "navi" id = "navi">
+                    <i class="fa fa-times" onclick = "hidemenu()"></i>
+                    <ul>
+                        <li><a href = "../Home Page.html">HOME</a></li>
+                        <li><a href = "Facts.html">FACTS</a></li>
+                        <li><a href = "Resources.html">RESOURCES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick = "showmenu()"></i>
+            </nav>
+            <div class = "main">
+                <h1>Information</h1>
+                <p>This page is where you can find my contact as well as this websites journey !</p>
+            </div>
+        </section>
+        
+        <!----About Section---->
+        <section class = "me">
+            <h2>About Me</h2>
+            <div class = "me-cont">
+                <img src = "../images/me.webp" alt = "me">
+            </div>
+            <p> Hello ! I am a first year student at Sunway University in Malaysia. I am currently studying for my bachelors in Computer Science, this website was coded for my
+                Web Fundementals class to utilise what I've learned throughout the semester; this was my first time creating something like this, but it was a lot of fun.
+                Hope you like what you see, feel free to contact me down below if you have any questions or comments.
+            </p>
+        </section>
+        <section class ="contactmepage">
+            <div class = "contact-form">
+                <h1>Contact me !</h1>
+                <h2>I will try my best to respond ASAP</h2>
+            </div>
+            <div class = "contact-form-real">
+                <form id = "contact-form" method = "post" action = "">
+                    <input name = "name" type = "text" class = "form-control" placeholder = "Your Name" required>
+                    <br>
+                    <input name = "email" type = "email" class = "form-control"  placeholder = "Your Email" required>
+                    <br>
+                    <textarea name = "message" class = "form-control" placeholder = "Your Message" required></textarea>
+                    <br>
+
+                    <input type = "submit" class="form-control submit" value = "Send">
+            </div>
+        </section>
+        <!----About Section End---->
+
+        <!---Journey---->
+        <section class = "plan">
+
+
+        </section>
+        <!---Journey End---->
+
+        <!---Footer---->
+        <section class = "about">   
+            <a href="#top"><i class="arrow up"></i></a>
+            <p>Back to top</p>
+        </section>
+
+        <!-----js----->
+        <script>
+        var navLinks = document.getElementById("navi");
+        function showmenu(){
+            navi.style.right = "0";
+        }
+        function hidemenu(){
+            navi.style.right = "-100%";
+        }
+        </script>
+    </body>
+</html>

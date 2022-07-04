@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name = "viewport" content = "with = device-width, initial-scale = 1.0">
+        <title>Ocean Sunfish Information Blog</title>
+        <link rel="icon" href="../images/logo_new.svg" type="image/icon type">
+        <link rel = "stylesheet" href = "../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/30c0a545fe.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href = "../Home Page.html"><img src = "../images/logo_new.svg"></a>
+                <div class = "navi" id = "navi">
+                    <i class="fa fa-times" onclick = "hidemenu()"></i>
+
+                    <ul>
+                        <li><a href = "../Home Page.html">HOME</a></li>
+                        <li><a href = "Facts.html">FACTS</a></li>
+                        <li><a href = "Information.html">INFORMATION</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick = "showmenu()"></i>
+            </nav>
+            <div class = "main">
+                <h1>References and Videos</h1>
+                <p>This page contains references used for this site.</p>
+            </div>
+        </section>
+        
+        <!---Youtube--->
+        <section class = "scroll">
+            <div class ="resv">
+            <h1>Watch Interesting Videos about the Ocean Sunfish</h1>
+            <h2>The Ocean Sunfish, a Giant from the Depths</h2>
+            <p><i>Deep Sea Wonders | The Ocean Sunfish, a Giant from the Depths</i></p>
+            <div class = "container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/e-FK1aR1pic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h2>BBC Earth | Rare Footage of Ocean Sunfish Getting Cleaned</h2>
+            <p><i>Join researchers in Galapagos to find the Ocean Sunfish, the heaviest bony fish in the world. </i></p>
+            <div class = "container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/A1WBilMrDIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        </section>
+        <!---Youtube End--->
+
+
+        <!---Ref Paragraph--->
+        <section class = "scroll">
+            <h1>References</h1>
+            <p>Articles and sites listed below were referenced for the information in this website.</p>
+            <div class = "row">
+                <div class = "column">
+                    <h3>Ocean Sunfish Images</h3>
+                    <p><i>Images used in this site can be found here<br>Issues regarding copyright can be emailed to the contact found in the information page.</i></p>
+                    <a href = "https://www.mindenpictures.com/search?s=mola"><i class="arrow right"></i></a>
+                </div>
+                <div class = "column">
+                    <h3>National Geographic</h3>
+                    <p><i>'Mola in Latin means "millstone" and describes the ocean sunfish’s somewhat circular shape. They are a silvery color and have a rough skin texture.'</i></p>
+                    <a href = "https://www.nationalgeographic.com/animals/fish/facts/ocean-sunfish"><i class="arrow right"></i></a>
+                </div>
+                <div class = "column">
+                    <h3>Mola 101, Devon Bowen</h3>
+                    <p><i>'Sunfish are indeed strange. They have no true tail, and instead look like a fish that has been cut in half. Their elongated dorsal and anal fins flop about in sync, appearing as though a stingray has been turned on its side.'</i></p>
+                    <a href = "https://www.aquarium.co.za/blog/entry/everything-you-need-to-know-about-ocean-sunfish"><i class="arrow right"></i></a>
+                </div>
+            </div>
+        </section>
+        <!---Ref Paragraph End--->
+
+        <section class = "about">   
+            <a href="#top"><i class="arrow up"></i></a>
+            <p>Back to top</p>
+        </section>
+
+        <!-----js----->
+        <script>
+            var navLinks = document.getElementById("navi");
+        
+            function showmenu(){
+                navi.style.right = "0";
+            }
+            function hidemenu(){
+                navi.style.right = "-100%";
+            }
+        </script>
+    </body>
+</html>
