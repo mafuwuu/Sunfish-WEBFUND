@@ -146,7 +146,40 @@
 
         <!----Gallery---->
         <section class = "gallery">
+            <h2>Image Gallery</h2>
         </section>
+        <section class = "plan">
+            <div class = "slideshow fade">
+                <div class = "numtext">1/4</div>
+                <img src = "">
+            </div>
+
+            <div class = "slideshow fade">
+                <div class = "numtext">2/4</div>
+                <img src = "../images/sunfishsurface.jpg">
+            </div>
+
+            <div class = "slideshow fade">
+                <div class = "numtext">3/4</div>
+                <img src = "">
+            </div>
+
+            <div class = "slideshow fade">
+                <div class = "numtext">4/4</div>
+                <img src = "">
+            </div>
+
+            <!--buttons-->
+            <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+
+        <!--dots-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
         <!----Gallery End---->
 
 
@@ -164,6 +197,34 @@
             function hidemenu(){
                 navi.style.right = "-100%";
             }
+
+        //ss
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slideshow");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
         </script>
     </body>
 </html>

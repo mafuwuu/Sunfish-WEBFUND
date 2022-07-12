@@ -48,7 +48,7 @@
                 <h2>I will try my best to respond ASAP</h2>
             </div>
             <div class = "contact-form-real">
-                <form id = "contact-form" method = "post" action = "">
+                <form id = "contact-form" method = "post" action = "contact-form-handler.php">
                     <input name = "name" type = "text" class = "form-control" placeholder = "Your Name" required>
                     <br>
                     <input name = "email" type = "email" class = "form-control"  placeholder = "Your Email" required>
@@ -63,9 +63,43 @@
 
         <!---Journey---->
         <section class = "plan">
+            <div class = "slideshow fade">
+                <div class = "numtext">1/4</div>
+                <img src = "../Layout/Home Page.png">
+                <div class = "slidetext">Inital Home Page</div>
+            </div>
 
+            <div class = "slideshow fade">
+                <div class = "numtext">2/4</div>
+                <img src = "../Layout/Facts.png">
+                <div class = "slidetext">Inital Facts Page</div>
+            </div>
 
+            <div class = "slideshow fade">
+                <div class = "numtext">3/4</div>
+                <img src = "../Layout/Resources.png">
+                <div class = "slidetext">Inital Resources Page</div>
+            </div>
+
+            <div class = "slideshow fade">
+                <div class = "numtext">4/4</div>
+                <img src = "../Layout/Contact.png">
+                <div class = "slidetext">Inital Contact Page</div>
+            </div>
+
+            <!--buttons-->
+            <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </section>
+
+        <!--dots-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
         <!---Journey End---->
 
         <!---Footer---->
@@ -82,6 +116,34 @@
         }
         function hidemenu(){
             navi.style.right = "-100%";
+        }
+
+        //ss
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slideshow");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
         }
         </script>
     </body>

@@ -402,10 +402,10 @@ h3{
         font-size: 20px;
     }
     .life h3{
-        font-size: 16px;
+        font-size: 20px;
     }
     .life p{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -452,10 +452,10 @@ h3{
         font-size: 20px;
     }
     .species h3{
-        font-size: 16px;
+        font-size: 20px;
     }
     .species p{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -473,6 +473,7 @@ h3{
     text-align: center;
     padding-top: 30px;
 }
+
 
 /*Information*/
 .me{
@@ -708,3 +709,112 @@ form .submit:hover{
     background-color: rgb(43, 43, 47);
     cursor: pointer;
 }
+@media (max-width: 700px){
+    .contactmepage{
+        width: 100%;
+    }
+    .contactmepage h1{
+        font-size: 20px;
+    }
+    .contactmepage h2{
+        font-size: 14px;
+    }
+    .contactmepage form{
+        width: 100%;
+    }
+    .form-control{
+        width: 100%;
+    }
+    input{
+        height: 35px;
+    }
+    form .submit{
+        font-size: 16px;
+        height: 40px;
+    }
+    
+}
+/*slideshow*/
+.plan{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.plan img{
+    height: auto;
+    margin-left: 90px;
+}
+.slideshow{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.slidetext{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    position: absolute;
+    bottom: 8px;
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+.numtext{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    position: absolute;
+    padding: 8px 12px;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  @media (max-width: 700px) {
+    .text {font-size: 13px}
+    img {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+  }
