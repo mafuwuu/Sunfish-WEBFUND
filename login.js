@@ -7,7 +7,7 @@ function validate(){
         return true;
     }
     else{
-        alert("Login Failed Please check username and password");
+        alert("Login Failed. Please check README.txt file for instructions");
         return false;
     }
 }

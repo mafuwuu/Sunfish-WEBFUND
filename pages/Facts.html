@@ -6,9 +6,9 @@
         <link rel="icon" href="../images/logo_new.svg" type="image/icon type">
         <link rel = "stylesheet" href = "../style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="https://kit.fontawesome.com/30c0a545fe.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://kit.fontawesome.com/30c0a545fe.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
         </head>
     <body>
@@ -144,44 +144,6 @@
         </section>
         <!----Species End---->
 
-        <!----Gallery---->
-        <section class = "gallery">
-            <h2>Image Gallery</h2>
-        </section>
-        <section class = "plan">
-            <div class = "slideshow fade">
-                <div class = "numtext">1/4</div>
-                <img src = "">
-            </div>
-
-            <div class = "slideshow fade">
-                <div class = "numtext">2/4</div>
-                <img src = "../images/sunfishsurface.jpg">
-            </div>
-
-            <div class = "slideshow fade">
-                <div class = "numtext">3/4</div>
-                <img src = "">
-            </div>
-
-            <div class = "slideshow fade">
-                <div class = "numtext">4/4</div>
-                <img src = "">
-            </div>
-
-            <!--buttons-->
-            <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </section>
-
-        <!--dots-->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <!----Gallery End---->
-
 
         <section class = "about">   
             <a href="#top"><i class="arrow up"></i></a>
@@ -197,34 +159,6 @@
             function hidemenu(){
                 navi.style.right = "-100%";
             }
-
-        //ss
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slideshow");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        }
         </script>
     </body>
 </html>
