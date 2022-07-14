@@ -661,6 +661,44 @@ h3{
 	right: 15px;
 	font-size: 16px;
 }
+@media (max-width: 700px){
+    .donation-box {
+        width: 80%;
+    }
+    .donation-box .title {
+        font-size: 20px;
+    }
+    .donation-box .donateb {
+        font-size: 20px;
+    }
+    .donation-box .fields {
+        top: 100px;
+    }
+    .donation-box .amount {
+        top: 100px;
+    }
+    .donation-box .amount .button {
+        font-size: 20px;
+    }
+    .donation-box .amount .button input {
+        font-size: 20px;
+    }
+    .donation-box .amount .set-amount {
+        max-width: 20px;
+        max-height: 20px;
+    }
+    .switch {
+        top: 260px;
+
+    }
+    .confirm {
+        top: 400px;
+    }
+    .switch-input:checked + .switch-label-on ~ .switch-selection {
+        left: 88px;
+    }
+}
+
 /*Contact form*/
 .contactmepage{
     text-align: center;

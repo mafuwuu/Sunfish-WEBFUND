@@ -15,7 +15,7 @@
         <section class = "header">
             <nav>
                 <a href = "../homepage.html"><img src = "../images/logo_new.svg"></a>
-                <div class = "navi">
+                <div class = "navi" id ="navi">
                     <i class="fa fa-times" onclick = "hidemenu()"></i>
                     <ul>
                         <li><a href = "../homepage.html">BACK TO HOME</a></li>
@@ -52,7 +52,7 @@
     
     <!-----js----->
     <script>
-    var header = document.getElementById("navi");
+    var navLinks = document.getElementById("navi");
     function showmenu(){
         navi.style.right = "0";
     }
